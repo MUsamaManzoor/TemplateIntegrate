@@ -19,12 +19,12 @@ use App\Http\Controllers\UsamaCotroller;
 //     return view('welcome');
 // });
 
-// Route::get('/master', function () {
-//     return view('main');
-// });
+Route::get('/master', function () {
+    return view('main');
+});
 
 //  Route::get('dashbord',[AdminController::class,'index'])->name('shera');
-    Route::get ('dashbord',[AdminController::class,'index'])->name('usama');
+    // Route::get ('dashbord',[AdminController::class,'index'])->name('usama');
 
 
     Route::resource('stock',UsamaCotroller::class);
